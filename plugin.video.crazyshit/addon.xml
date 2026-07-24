@@ -1,0 +1,40 @@
+<?xml version="1.2" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.crazyshit"
+      name="[B][COLOR antiquewhite]CrazyShit[/COLOR][/B]"
+      version="1.1.1.1"
+      provider-name="crazyshit">
+    <requires>
+        <!--copy py2 compliant for kodi 18 leia-->
+        <!--import addon="xbmc.python" version="2.1.0"/-->
+        <!--copy py3 compliant for kodi 19 matrix-->
+        <!--import addon="xbmc.python" version="3.0.0"/-->
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en">[COLOR red]CrazyShit is an 18+ Addon!!![/COLOR]</summary>
+        <description lang="en">[COLOR red]WARNING 18+ Content!!![/COLOR]
+
+CrazyShit.com
+
+K18-K22
+Leia, Matrix, Nexus, Omega, Piers
+
+[COLOR lime]Kudos:[/COLOR]
+- DEB
+- The_Brother_From_ANONother_Mother
+- Vashiel
+        </description>
+        <platform>all</platform>
+        <assets>
+            <icon>/resources/art/icon.png</icon>
+            <fanart>/resources/art/fanart.jpg</fanart>
+        </assets>
+        <disclaimer lang="en">The content presented by this Addon, serve the training and further education and are subject to the "scope" of the "DEB - Training Center for Applied Technology and Research, the Canton of Bern".
+The Use outside the "scope" is not permitted!
+The Author does not host or distribute any of the content displayed by this addon!
+        </disclaimer>
+        <news>Website Addon.</news>
+    </extension>
+</addon>
