@@ -15,7 +15,10 @@
     </extension>
   </addon>
 
-  <addon id="plugin.video.crazyshit" name="[B][COLOR antiquewhite]CrazyShit[/COLOR][/B]" version="1.1.1.1" provider-name="crazyshit">
+<addon id="plugin.video.crazyshit" name="[B][COLOR antiquewhite]CrazyShit[/COLOR][/B]" version="1.1.1.1" provider-name="crazyshit">
+    <requires>
+      <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
       <provides>video</provides>
     </extension>
