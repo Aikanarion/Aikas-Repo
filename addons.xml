@@ -13,22 +13,15 @@
       <description>Hierüber verwalte und verteile ich meine Kodi Add-ons.</description>
       <platform>all</platform>
     </extension>
-<addon id="plugin.video.crazyshit"
-      name="[B][COLOR antiquewhite]CrazyShit[/COLOR][/B]"
-      version="1.1.1.1"
-      provider-name="crazyshit">
-    <requires>
-        <!--copy py2 compliant for kodi 18 leia-->
-        <!--import addon="xbmc.python" version="2.1.0"/-->
-        <!--copy py3 compliant for kodi 19 matrix-->
-        <!--import addon="xbmc.python" version="3.0.0"/-->
-    </requires>
+  </addon>
+
+  <addon id="plugin.video.crazyshit" name="[B][COLOR antiquewhite]CrazyShit[/COLOR][/B]" version="1.1.1.1" provider-name="crazyshit">
     <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
+      <provides>video</provides>
     </extension>
     <extension point="xbmc.addon.metadata">
-        <summary lang="en">[COLOR red]CrazyShit is an 18+ Addon!!![/COLOR]</summary>
-        <description lang="en">[COLOR red]WARNING 18+ Content!!![/COLOR]
+      <summary lang="en">[COLOR red]CrazyShit is an 18+ Addon!!![/COLOR]</summary>
+      <description lang="en">[COLOR red]WARNING 18+ Content!!![/COLOR]
 
 CrazyShit.com
 
@@ -39,80 +32,80 @@ Leia, Matrix, Nexus, Omega, Piers
 - DEB
 - The_Brother_From_ANONother_Mother
 - Vashiel
-        </description>
-        <platform>all</platform>
-        <assets>
-            <icon>/resources/art/icon.png</icon>
-            <fanart>/resources/art/fanart.jpg</fanart>
-        </assets>
-        <disclaimer lang="en">The content presented by this Addon, serve the training and further education and are subject to the "scope" of the "DEB - Training Center for Applied Technology and Research, the Canton of Bern".
+      </description>
+      <platform>all</platform>
+      <assets>
+        <icon>resources/art/icon.png</icon>
+        <fanart>resources/art/fanart.jpg</fanart>
+      </assets>
+      <disclaimer lang="en">The content presented by this Addon, serve the training and further education and are subject to the "scope" of the "DEB - Training Center for Applied Technology and Research, the Canton of Bern".
 The Use outside the "scope" is not permitted!
 The Author does not host or distribute any of the content displayed by this addon!
-        </disclaimer>
-        <news>Website Addon.</news>
+      </disclaimer>
+      <news>Website Addon.</news>
     </extension>
-</addon>
-    <addon id="plugin.video.xstream" name="xStream" version="2026.07.23" provider-name="Modded by Akisame">
-	<requires>
-		<import addon="xbmc.python" version="3.0.0"/>
-		<import addon="script.module.requests"/>
-		<import addon="script.module.resolveurl"/>
-		<import addon="script.module.pyaes"/>
-	</requires>
-	<extension point="xbmc.python.pluginsource" library="default.py">
-		<provides>video</provides>
-	</extension>
-    <extension point="xbmc.service" library="service.py" start="startup" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="de">xStream</summary>
-		<summary lang="en_GB">xStream</summary>
-		<description lang="de">xStream ist ein Video-Addon für Kodi. xStream dient als Suchmaschine für Filme und Serien auf verschiedenen Webseiten.</description>
-		<description lang="en_GB">xStream is a video add-on for Kodi. xStream serves as a search engine for films and series on various websites.</description>
-		<disclaimer lang="de">Sie können dieses Video Addon gerne verwenden. Der bereitgestellte Inhalt der Webseiten steht in keinem Bezug zu xStream oder den Entwicklern! Weitere Informationen finden Sie in unserer Wiki und FaQ.</disclaimer>
-		<disclaimer lang="en_GB">You are welcome to use this video addon. The content provided on the websites has no connection to xStream or the developers! For more information, see our Wiki and FaQ.</disclaimer>
-		<language>de en</language>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-		<assets>
-			<icon>resources/icon.png</icon>
-			<fanart>resources/fanart.jpg</fanart>
-			<banner>resources/banner.png</banner>
-			<clearlogo>resources/clearlogo.png</clearlogo>
-		</assets>
-	</extension>
-</addon>
-<addon id="plugin.video.xship" version="2026.07.05" name="xShip" provider-name="Modded by Akisame">
+  </addon>
+
+  <addon id="plugin.video.xstream" name="xStream" version="2026.07.23" provider-name="Modded by Akisame">
     <requires>
-        <import addon="xbmc.python" version="3.0.0"/>
-        <import addon="script.module.requests"/>
-        <import addon="script.module.resolveurl" version="5.1.100"/>
-        <!-- for remote debug -->
-        <import addon="script.module.pydevd" optional="true"/>
+      <import addon="xbmc.python" version="3.0.0"/>
+      <import addon="script.module.requests"/>
+      <import addon="script.module.resolveurl"/>
+      <import addon="script.module.pyaes"/>
     </requires>
     <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
+      <provides>video</provides>
     </extension>
-    <extension point="xbmc.service" library="service.py" start="startup" />
+    <extension point="xbmc.service" library="service.py" start="startup"/>
     <extension point="xbmc.addon.metadata">
-        <summary lang="de_DE">xShip: Modded by Akisame</summary>
-        <summary lang="en_GB">xShip: Modded by Akisame</summary>
-        <description lang="de">xShip wurde als Video-Addon entwickelt, um Streams verschiedenster Webseiten zu sammeln und anzuzeigen. Der Inhalt von xShip, als auch das Angebot an Webseiten-Inhalten wird von den xShip Entwicklern wieder weiter entwickelt.</description>
-        <description lang="en_GB">xShip was developed as a video add-on to collect and display streams from various websites. The content of xShip, as well as the range of website content, is being further developed by the xShip developers.</description>
-        <disclaimer lang="de_DE">Mit diesem Video-Addon kannst du auf alle angebotenen Streams verschiedenster deutscher Quellen zugreifen. Dieses Addon ist kein offizieller Teil des Kodi Media Center und wird daher nicht von den offiziellen Support-Kanälen abgedeckt! xShip durchsucht die enthaltenen Webseiten nach Streams und stellt diese in einer Übersicht dar. Der bereitgestellte Inhalt der Webseiten steht in keinem Bezug zu xShip oder den Entwicklern! xShip durchsucht die enthaltenen Webseiten nach Streams und stellt diese in einer Übersicht dar.</disclaimer>
-        <disclaimer lang="en_GB">With this video add-on you can access all streams offered by various German sources. This add-on is not an official part of the Kodi Media Center and is therefore not covered by the official support channels! xShip searches the included websites for streams and displays them in an overview. The content provided by the websites has no connection to xShip or the developers! xShip searches the included websites for streams and displays them in an overview.</disclaimer>
-        <language>de</language>
-		<platform>all</platform>
-		<license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
-        <!--<website></website>-->
-        <assets>
-			<icon>resources/media/icon.png</icon>
-			<fanart>resources/media/fanart.jpg</fanart>
-			<banner>resources/media/banner.png</banner>
-			<clearlogo>resources/media/clearlogo.png</clearlogo>
-			<screenshot>resources/media/screenshot-01.jpg</screenshot>
-			<screenshot>resources/media/screenshot-02.jpg</screenshot>
-			<screenshot>resources/media/screenshot-04.jpg</screenshot>
-		</assets>
+      <summary lang="de">xStream</summary>
+      <summary lang="en_GB">xStream</summary>
+      <description lang="de">xStream ist ein Video-Addon für Kodi. xStream dient als Suchmaschine für Filme und Serien auf verschiedenen Webseiten.</description>
+      <description lang="en_GB">xStream is a video add-on for Kodi. xStream serves as a search engine for films and series on various websites.</description>
+      <disclaimer lang="de">Sie können dieses Video Addon gerne verwenden. Der bereitgestellte Inhalt der Webseiten steht in keinem Bezug zu xStream oder den Entwicklern! Weitere Informationen finden Sie in unserer Wiki und FaQ.</disclaimer>
+      <disclaimer lang="en_GB">You are welcome to use this video addon. The content provided on the websites has no connection to xStream or the developers! For more information, see our Wiki and FaQ.</disclaimer>
+      <language>de en</language>
+      <platform>all</platform>
+      <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+      <assets>
+        <icon>resources/icon.png</icon>
+        <fanart>resources/fanart.jpg</fanart>
+        <banner>resources/banner.png</banner>
+        <clearlogo>resources/clearlogo.png</clearlogo>
+      </assets>
     </extension>
-</addon>
+  </addon>
 
+  <addon id="plugin.video.xship" version="2026.07.05" name="xShip" provider-name="Modded by Akisame">
+    <requires>
+      <import addon="xbmc.python" version="3.0.0"/>
+      <import addon="script.module.requests"/>
+      <import addon="script.module.resolveurl" version="5.1.100"/>
+      <import addon="script.module.pydevd" optional="true"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+      <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup"/>
+    <extension point="xbmc.addon.metadata">
+      <summary lang="de_DE">xShip: Modded by Akisame</summary>
+      <summary lang="en_GB">xShip: Modded by Akisame</summary>
+      <description lang="de">xShip wurde als Video-Addon entwickelt, um Streams verschiedenster Webseiten zu sammeln und anzuzeigen. Der Inhalt von xShip, als auch das Angebot an Webseiten-Inhalten wird von den xShip Entwicklern wieder weiter entwickelt.</description>
+      <description lang="en_GB">xShip was developed as a video add-on to collect and display streams from various websites. The content of xShip, as well as the range of website content, is being further developed by the xShip developers.</description>
+      <disclaimer lang="de_DE">Mit diesem Video-Addon kannst du auf alle angebotenen Streams verschiedenster deutscher Quellen zugreifen. Dieses Addon ist kein offizieller Teil des Kodi Media Center und wird daher nicht von den offiziellen Support-Kanälen abgedeckt! xShip durchsucht die enthaltenen Webseiten nach Streams und stellt diese in einer Übersicht dar. Der bereitgestellte Inhalt der Webseiten steht in keinem Bezug zu xShip oder den Entwicklern! xShip durchsucht die enthaltenen Webseiten nach Streams und stellt diese in einer Übersicht dar.</disclaimer>
+      <disclaimer lang="en_GB">With this video add-on you can access all streams offered by various German sources. This add-on is not an official part of the Kodi Media Center and is therefore not covered by the official support channels! xShip searches the included websites for streams and displays them in an overview. The content provided by the websites has no connection to xShip or the developers! xShip searches the included websites for streams and displays them in an overview.</disclaimer>
+      <language>de</language>
+      <platform>all</platform>
+      <license>GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007</license>
+      <assets>
+        <icon>resources/media/icon.png</icon>
+        <fanart>resources/media/fanart.jpg</fanart>
+        <banner>resources/media/banner.png</banner>
+        <clearlogo>resources/media/clearlogo.png</clearlogo>
+        <screenshot>resources/media/screenshot-01.jpg</screenshot>
+        <screenshot>resources/media/screenshot-02.jpg</screenshot>
+        <screenshot>resources/media/screenshot-04.jpg</screenshot>
+      </assets>
+    </extension>
+  </addon>
+</addons>
